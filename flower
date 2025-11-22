@@ -1,0 +1,18 @@
+import turtle
+
+t = turtle.Turtle()
+t.speed(10)
+t.color("red")
+
+# Draw flower petals
+for _ in range(36):
+    t.circle(100)
+    t.left(10)
+
+# Draw center
+t.color("yellow")
+t.begin_fill()
+t.circle(50)
+t.end_fill()
+
+turtle.done()
